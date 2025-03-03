@@ -1,0 +1,118 @@
+/* components/Game.module.css */
+.gameContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: url('/background-trail.png') repeat;
+  color: #FFFFFF;
+}
+
+.characterSelection {
+  text-align: center;
+  padding: 20px;
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.characterCard {
+  border: 2px solid #32CD32;
+  padding: 10px;
+  cursor: pointer;
+  width: 150px;
+  background: #2E8B57; /* Updated to green from mockup */
+  color: #FFD700;
+}
+
+.characterCard:hover {
+  background-color: #228B22; /* Darker green for hover */
+}
+
+.characterImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: #2E8B57; /* Updated to green */
+  padding: 10px;
+  border: 1px solid #32CD32;
+}
+
+.characterInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.characterInfo img {
+  width: 50px;
+  height: 50px;
+}
+
+.suppliesArea {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.suppliesItem {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  background: #2E8B57; /* Updated to green */
+  color: #32CD32;
+}
+
+.suppliesItem img {
+  width: 50px;
+  height: 50px;
+}
+
+.wagon {
+  border: 2px dashed #32CD32;
+  padding: 20px;
+  min-height: 150px;
+  background-color: #2E8B57; /* Updated to green */
+}
+
+.wagonItem {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wagonItem img {
+  width: 50px;
+  height: 50px;
+}
+
+.nextButton {
+  padding: 10px 20px;
+  background-color: #32CD32;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.nextButton:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.nextButton:hover:not(:disabled) {
+  background-color: #228B22;
+}
